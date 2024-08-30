@@ -1,22 +1,29 @@
+/* Body and general styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
 }
 
+/* Hero Section Styling */
 .hero-section {
-    height: 100vh;
-    background: linear-gradient(to bottom right, #b87f6a, #c28873);
+    height: 100vh; /* Ocupa toda la altura de la ventana del navegador */
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 40px 20px; /* Agregar padding para consistencia */
     position: relative;
+    background-color: rgba(249, 246, 246, 0.2); /* Fondo con textura suave */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-section img.profile-pic {
     border-radius: 50%;
-    border: 5px solid #fff;
+    border: 5px solid #4ca1af; /* Borde que armoniza con el fondo */
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -26,8 +33,8 @@ body {
 }
 
 .hero-section h1 {
-    font-size: 3rem;
-    color: #fff;
+    font-size: 2.5rem; /* Ajustar tamaño para alinearse con los títulos de otras secciones */
+    color: #ffffff; /* Texto blanco para buen contraste */
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     animation: slideIn 1.5s ease-in-out;
@@ -35,7 +42,7 @@ body {
 
 .hero-section p {
     font-size: 1.2rem;
-    color: #fff;
+    color: #ffffff; /* Texto blanco para coherencia */
     margin-bottom: 20px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     animation: slideIn 1.8s ease-in-out;
@@ -58,12 +65,122 @@ body {
     background-color: #0056b3;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+/* Sobre mí and Experiencia Sections */
+#about, #experience {
+    padding: 40px 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@keyframes slideIn {
-    from { transform: translateY(30px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+#about:hover, #experience:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
+
+#about h2, #experience h2 {
+    font-size: 2.5rem;
+    color: #0073b1; /* Azul para armonizar con el hero */
+    margin-bottom: 20px;
+    border-bottom: 3px solid #4ca1af; /* Usar azul complementario */
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#about h2::before, #experience h2::before {
+    content: url('/mnt/data/image.png'); /* Usa la imagen relevante como ícono */
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+#about p, #experience p, #experience ul {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#experience ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#experience ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #0073b1;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Contact Section Styling */
+#contact {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom right, #f4f4f4, #e6e6e6);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+#contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #0073b1;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #4ca1af;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.contact-info {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-info p:hover {
+    color: #0073b1;
+    transform: scale(1.05);
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #0073b1;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-info p:hover i {
+    color: #4ca1af;
+    transform: rotate(360deg);
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
