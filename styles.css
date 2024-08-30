@@ -5,9 +5,9 @@ body {
 
 .hero-section {
     height: 100vh;
-    background: linear-gradient(to bottom right, #ff7f50cc, #ff4500cc), url('./images/charBrown.jpg') no-repeat center center/cover;
+    background: linear-gradient(to bottom right, #ff7f50cc, #ff4500cc), url('/mnt/data/A_vibrant_and_dynamic_hero_section_background_for_.png') no-repeat center center/cover;
+    color: #ffffff;
 }
-
 
 h1, h2 {
     color: #333;
@@ -15,6 +15,23 @@ h1, h2 {
 
 section {
     margin-bottom: 60px;
+}
+
+#projects {
+    padding: 60px 0;
+    background: url('./images/paper1.webp') no-repeat center center/cover;
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.card-body {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: white;
 }
 
 footer {

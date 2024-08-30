@@ -49,9 +49,9 @@
         </div>
     </section>
 
-    <section id="projects" class="container mt-5" data-aos="fade-up">
+    <section id="projects" class="container mt-5" data-aos="zoom-in">
         <h2>Proyectos Destacados</h2>
-        <div id="repos" class="row">
+        <div id="repos" class="row" data-aos="fade-up" data-aos-delay="100">
             <!-- Proyectos serán cargados aquí dinámicamente -->
         </div>
     </section>
@@ -71,7 +71,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="app.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1200,
+        });
     </script>
 </body>
 
