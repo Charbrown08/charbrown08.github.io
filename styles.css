@@ -91,7 +91,6 @@ body {
 }
 
 #about h2::before, #experience h2::before {
-    content: url('/mnt/data/image.png'); /* Usa la imagen relevante como ícono */
     width: 40px;
     height: 40px;
     margin-right: 15px;
@@ -182,5 +181,15 @@ footer {
 .contact-info a:hover {
     color: #0056b3;
     text-decoration: underline;
+}
+
+ #Featured h2 {
+    font-size: 2.5rem;
+    color: #0073b1; /* Azul para armonizar con el hero */
+    margin-bottom: 20px;
+    border-bottom: 3px solid #4ca1af; /* Usar azul complementario */
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 

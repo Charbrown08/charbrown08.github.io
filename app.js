@@ -4,12 +4,11 @@ $(document).ready(function () {
 
   // Array de imágenes personalizadas para cada proyecto
   const images = [
-    './images/git (2).png',
     './images/git (1).png',
-    './images/git.png',
-    './images/github.png',
     './images/git (3).png',
-    './images/git (1).png',
+    './images/git (4).png',
+    './images/git (5).png',
+    './images/git (6).png',
   ]
 
   fetch(`https://api.github.com/users/${username}/repos`)
@@ -30,7 +29,7 @@ $(document).ready(function () {
                             }</p>
                             <a href="${
                               repo.html_url
-                            }" class="btn btn-warning" target="_blank">Ver en GitHub</a>
+                            }" class="btn btn-warning" target="_blank">See on GitHub</a>
                         </div>
                     </div>
                 </div>`
